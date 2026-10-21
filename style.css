@@ -5,16 +5,18 @@
 html,
 body {
   background-color: black;
-  width: 100%;
-  height: 100%;
+  width: 100hv;
+  height: 100hv;
   margin: 0px;
   padding: 0px;
-  overflow: hidden;
   display: flex;
+  min-width: 50vh;
+  min-height: 50vh;
 }
 
 #sidebar {
   background-color: #080808;
+  overflow: hidden;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -54,7 +56,7 @@ body {
   color: #000;
 }
 
-#sidePizza {
+#sideFood {
   max-width: 100%;
   max-height: 100%;
   border: white solid 1px;
