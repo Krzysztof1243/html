@@ -4,6 +4,7 @@
 
 html,
 body {
+  background-color: black;
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -13,26 +14,28 @@ body {
 }
 
 #sidebar {
-  background-color: #1c1c1c;
+  background-color: #080808;
   position: fixed;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-right: 3px solid rgb(0, 0, 0);
-  max-width: 120px;
+  border-right: 3px solid white;
+  border-left: 3px solid white;
   height: 100%;
-  width: 100%;
+  width: calc(100vh / 5);
 }
 
 .sideButton {
   width: 100%;
-  height: 100px;
+  height: calc(100% / 3);
   background: transparent;
   border-left: none;
   border-right: none;
   border-top: 3px white solid;
   border-bottom: 3px white solid;
   color: white;
+  font-size: 25px;
+  font-family: fantasy, Arial, Helvetica, sans-serif;
 }
 
 .sideButton + .sideButton {
@@ -43,10 +46,17 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   margin-left: 120px;
-  width: calc(100% - 120px);
+  width: calc(100% - 100vh / 5);
   height: 100%;
 }
 
 #test {
   color: #000;
+}
+
+#sidePizza {
+  max-width: 100%;
+  max-height: 100%;
+  border: white solid 1px;
+  border-radius: 2%;
 }
